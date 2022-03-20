@@ -1,0 +1,3 @@
+# This Repositories is about...
+... Current Projects and training lessons of programming
+* I wish you well... XD
