@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="IcaroBlaster"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-07 10:08:25 "/>
+        <attribute name="created" value="SWNhcm9CbGFzdGVyO0RFU0tUT1AtSUlKQk9HUTsyMDIyLTAyLTA3OyIwOTo0NToyOSAiOzM1MTA="/>
+        <attribute name="edited" value="SWNhcm9CbGFzdGVyO0RFU0tUT1AtSUlKQk9HUTsyMDIyLTAyLTA3OyIxMDowODoyNSAiOzE7MzYwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente" type="String" array="False" size=""/>
+            <declare name="cartao" type="Boolean" array="False" size=""/>
+            <declare name="numero" type="String" array="False" size=""/>
+            <input variable="cliente"/>
+            <input variable="cartao"/>
+            <if expression="cartao">
+                <then>
+                    <input variable="numero"/>
+                </then>
+                <else>
+                    <output expression="&quot;infelizmente nao aceitamos vendas sem cartao&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="IcaroBlaster"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-07 10:47:11 "/>
+        <attribute name="created" value="SWNhcm9CbGFzdGVyO0RFU0tUT1AtSUlKQk9HUTsyMDIyLTAyLTA3OyIxMDowODoyNyAiOzM0OTk="/>
+        <attribute name="edited" value="SWNhcm9CbGFzdGVyO0RFU0tUT1AtSUlKQk9HUTsyMDIyLTAyLTA3OyIxMDo0NzoxMSAiOzI7MzYwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="atividade" type="Boolean" array="False" size=""/>
+            <assign variable="atividade" expression="true"/>
+            <declare name="nome, sobrenome, simounao" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <declare name="Idade" type="Integer" array="False" size=""/>
+            <while expression="atividade==true">
+                <output expression="&quot;digite seu primeiro nome&quot;" newline="True"/>
+                <input variable="nome"/>
+                <output expression="&quot;digite seu sobrenome&quot;" newline="True"/>
+                <input variable="sobrenome"/>
+                <output expression="&quot;Agora sua idade, por favor...&quot;" newline="True"/>
+                <input variable="idade"/>
+                <output expression="&quot;Digite suas notas!&quot;" newline="True"/>
+                <input variable="nota1"/>
+                <input variable="nota2"/>
+                <input variable="nota3"/>
+                <input variable="nota4"/>
+                <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+                <if expression="media&gt;7">
+                    <then>
+                        <output expression="&quot;Seu nome &#233; &quot; &amp; nome &amp; &quot; &quot; &amp; sobrenome &amp; &quot; E sua idade &#233;: &quot; &amp; idade &amp; &quot;        ALUNO APROVADO&quot; &amp; &quot;   Deseja reiniciar?&quot;" newline="True"/>
+                        <input variable="simounao"/>
+                        <if expression="simounao == &quot;sim&quot;">
+                            <then>
+                                <assign variable="atividade" expression="true"/>
+                            </then>
+                            <else>
+                                <assign variable="atividade" expression="false"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Seu nome &#233; &quot; &amp; nome &amp; &quot; &quot; &amp; sobrenome &amp; &quot; E sua idade &#233;: &quot; &amp; idade &amp; &quot;      ALUNO REPROVADO&quot; &amp; &quot;   Deseja reiniciar?&quot;" newline="True"/>
+                        <input variable="simounao"/>
+                        <if expression="simounao == &quot;sim&quot;">
+                            <then>
+                                <assign variable="atividade" expression="true"/>
+                            </then>
+                            <else>
+                                <assign variable="atividade" expression="false"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Muito obrigado por utilizar nossa plataforma, At&#233; a pr&#243;xima&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
