@@ -3,4 +3,4 @@
 
 PASSWORDS = {'email' : 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
             'blog' : 'Vmal...',
-            'luggage' : '12345'}
+            'luggage' : '12345'} 
